@@ -1,0 +1,49 @@
+/*SELECCION POR ATRIBUTO*/
+
+img[src="images/imagen-joyas.jpg"] {
+    width: 100%;
+}
+/* Para seleccionar una imagen donde el atributo src termine por ejemplo en 'png' ,y poder darle un estilo, escribo asi img[src$="png"]*/
+
+/*Para seleccionar una imagen donde el atributo src empiece 
+, por ejemplo, con 'images' ,y poder darle un estilo, escribo asi img[sr^="png"]*/
+
+/*SELECTORES DESCENDIENTES*/
+
+ul li {
+    color: red;
+}
+
+ul strong {
+    color: green;
+}
+/* Asi le doy estilo solo a los elementos descendientes 'li' o 'strong' etc, por ejemplo, que estan dentro de un 'ul'*/
+
+
+/*SELECTOR POR HIJO DIRECTO*/
+ul > em {
+    color: blue;
+}
+/* Asi seleccionamos un elemento hijo direcro de un elemento padre, en este caso 'ul' es el padre y 'em' el elemento hijo,*/
+
+
+
+/*SELECTOR  DE HERMANO ADYACENTE*/
+h1 + p {
+    color: brown;
+}
+/* ES para seleccionar un elemento que esta inmediatamente debajo de otro, pero solamente a ese.
+Aca tambien podria darle stilo a un elemento adyasente salteando otro igual, por ejemplo: 
+h1 + p + p {
+    color: blue;
+}
+Y hacer asi una cadena infinita*/
+h1 + p + ul + li + li + li + strong + li + li + em {
+    background-color: bisque;
+}
+
+/*SELECTOR DE HERMANOS GENERALES*/
+h1 ~ p {
+    color: brown;
+}
+/* Este selector se le asigna a los elementos hermanos que vienen despues de uno en particula en este caso el 'h1'*/

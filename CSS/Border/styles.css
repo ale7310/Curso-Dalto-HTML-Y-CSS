@@ -1,0 +1,13 @@
+div {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 4px;
+    /* tambien la propiedad border se puede definir
+    como border: 5px solid green */
+    /* Ademas podemos definir el borde de un solo lado como border-top, bottom, left o right*/
+}

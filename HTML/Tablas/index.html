@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table>
+        <thead> <!-- El uso de thead, tbody y tfooter es la forma correcta de la utilizacion de datos tabulares. Le da buen posicionamiento a nuestra pagina web --> 
+            <tr>
+                <th>Producto</th>
+                <th>Costo</th>
+                <th>Unidades</th>
+            </tr>
+        </thead>
+        <tbody>    
+            <tr><!-- Usamos <tr>(table row) Para crear filas-->
+                <td>Banana</td>
+                <td>$3</td>
+                <td>1kg</td>
+            <tr>
+                <td>Manzana</td><!-- Usamos <td> para crear columnas-->
+                <td>$2</td>
+                <td>1kg</td>
+            </tr>
+            <tr>
+                td>Melon</td>
+                <td>$4</td>
+                <td>1 unidad</td>
+            </tr>
+        </tbody>
+        <tfooter>   
+            <tr>
+                <th class="header-total">Total</th>
+                <td class="dato-total" colspan="2">$9</td><!-- El atributo "colspan" se usa para hacer que la celda en cuestion ocupe tantos espacios como necesitemos-->
+            </tr>
+        </tfooter>        
+    </table>
+</body>
+</html>

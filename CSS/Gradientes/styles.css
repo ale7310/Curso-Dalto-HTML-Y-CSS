@@ -1,0 +1,45 @@
+body {
+    background-color: #f00;
+}
+/* LINEAR-GRADIENTE*/
+.box1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#0009, transparent);
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+/* Para rotar los gradientes se usan las cordenadas "to top" y el gradiente va dearriba hasta la transparencia abajo. "to left" y empieza de izquierda aderecha. "to bottom" y "to right". Para giros mas especificos en grados se utiliza "rotation deg". */
+/* RADIAL-GRADIEMTE*/
+.box2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(#00f, #0009);
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+/* CONIC-GRADIENTE*/
+.box3 {
+    width: 400px;
+    height: 400px;
+    background: conic-gradient( transparent,#0009);
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}

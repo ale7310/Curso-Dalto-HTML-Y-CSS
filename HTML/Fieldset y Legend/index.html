@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset y Legend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <h2>
+            Formulario de Contacto
+        </h2>
+
+        <fieldset>
+            <legend>IFORMACIÓN BASICA</legend>                    <!-- SIMPLE INPUTS-->
+            <div class="form-input">
+                <label for="nombre">Nombre Completo
+                    <input type="text" placeholder="John Doe" id="nombre">
+                </label>
+                <!-- Otra forma de vincular el label con el input es asi..
+                <label>Nombre Completo
+                    <input type="text" placeholder="John Doe">
+                </label> 
+                    Es decir que metemos el input dentro del label -->
+            </div>
+            <div class="form-input">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Ejemplo@email.com" id="email">
+            </div>
+            <div class="form-input">
+                <label for="">Asunto
+                    <input type="email" placeholder="El asunto de tu mensaje">
+                </label>
+            </div>
+        </fieldset> 
+
+        <!-- SELECT Y OPTION -->
+        <div class="form-input">
+            <label>Tipo de usuario
+                <select name="type-of-user">
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otro</option>
+                </select>
+            </label>
+        </div>
+
+        <!-- DATALIST Y OPTION -->
+        <div class="form-input">
+            <label>Referente
+                <input list="referente">
+            <datalist id="referente" name="type-of-user">
+                <option value="Soy Dalto">Un creador de contenido</option>
+                <option value="Una empresa">Una empresa del rubre IT</option>
+                <option value="Un amigo">Me recomendo un amigo</option>
+            </datalist>
+        </label>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class="form-input">
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="8" placeholder="Deja tu mensaje..." id="mensaje"></textarea>
+        </div>
+        <div class="form-input">
+            <label>Acepto los <a href="terms.html">terminos y condiciones</a>
+                <input type="checkbox" class="checkbox">
+            </label>
+
+        </div>
+    </form>
+</body>
+</html>

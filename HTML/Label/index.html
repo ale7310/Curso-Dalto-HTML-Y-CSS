@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <form>
+        <h2>
+            Formulario de Contacto
+        </h2>
+        <div class="form-input">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" placeholder="John Doe" id="nombre">
+            <!-- Otra forma de vincular el label con el input es asi..
+            <label>Nombre Completo
+                <input type="text" placeholder="John Doe">
+            </label> 
+                Es decir que metemos el input dentro del label -->
+        </div>
+        <div class="form-input">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Ejemplo@email.com" id="email">
+        </div>
+        <div class="form-input">
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="8" placeholder="Deja tu mensaje..." id="mensaje"></textarea>
+        </div>
+    </form>
+</body>
+</html>
